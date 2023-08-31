@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Inconsolata:wght@700&family=Poppins&family=Quicksand:wght@300;600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="logo.PNG" alt="" style="width: 100px; height: 50px;">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index1.html">SERVICES</a></li>
+            <li><a href="index2.html">ABOUT US</a></li>
+            <li><a href="index3.html">CONTACT US</a></li>
+            <li><a href="index4.html">E-MAIL</a></li>
+            <li><a href="index5.html">ORDER</a></li>
+        </ul>
+    </nav>
+    <main class="order">
+        <p class="introducer">Soumettez-vos Commandes en remplissant ce formulaire</p>
+        <div class="formulaire">
+            <form>
+                <fieldset>
+                    <div class="import">Identité</div> <br>
+                    <label for="name">Nom</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="name" placeholder="Nom"><br>
+                    <label for="postname">Post-nom</label>
+                    &nbsp;&nbsp;&nbsp;<input type="text"  id="postaname" placeholder="Post-nom"><br>
+                </fieldset>
+                <fieldset>
+                    <div class="import">Date de la commande</div> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date">
+                </fieldset>
+                <fieldset>
+                    <div class="import">Adresse</div><br>
+                    <label for="province">Province</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="province" placeholder="Province"><br>
+                    <label for="ville">Ville</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="ville" placeholder="Ville"><br>
+                    <label for="commnune">Commune</label>
+                    &nbsp;<input type="text" id="commune" placeholder="Commune"><br>
+                    <label for="rue">Rue</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="rue" placeholder="Rue"><br>
+                    <label for="Numero">Numero</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" min="0" max="1000" placeholder="Numero du domicile"><br>
+                </fieldset>
+                <fieldset>
+                    <div class="import">Type de commande</div><br>
+                    <input type="checkbox" id="agricole">
+                    <label for="agricole">Produits agricoles</label>
+                    <input type="checkbox" id="elevage">
+                    <label for="elevage">Produits d'élevage</label>
+                    <input type="checkbox" id="prodder">
+                    <label for="prodder">Produits agricoles dérivés</label>
+                    <input type="checkbox" id="prodder">
+                    <label for="prodder">Produits dérivés de l'élevage</label>
+                    <input type="checkbox" id="autre">
+                    <label for="autres">Autres services</label>
+                </fieldset>
+                <fieldset>
+                    <div class="import">Nature de la commande</div><br>
+                    <input type="checkbox" id="viande" style="width: none;">
+                    <label for="viande">Viande de vaches et produits dérivés</label>
+                    <input type="checkbox" id="viande" style="width: none;">
+                    <label for="viande">Viande de chèvre</label>
+                    <input type="checkbox" id="viande"style="width: none;">
+                    <label for="viande">Viande de porc et produits dérivés</label>
+                    <input type="checkbox" id="viande"style="width: none;">
+                    <label for="viande">Viande de lapins</label>
+                    <input type="checkbox" id="viande"style="width: none;">
+                    <label for="viande">Viande de volailles</label>
+                    <input type="checkbox" id="Lait"style="width: none;">
+                    <label for="Lait">Lait et produits laitiers</label>
+                    <input type="checkbox" id="oeuf"style="width: none;">
+                    <label for="oeuf">Oeufs</label>
+                    <input type="checkbox" id="autre"style="width: none;">
+                    <label for="viande">Autres produits</label>
+                </fieldset>
+                <fieldset>
+                    <div class="import">Quantité</div><br>
+                    <p><em>Note :</em> Vous ne pouvez passer votre commandes qu'à partir de 10 produits!!!</p><br>
+                    <label for="nombre">Nombre de produits</label>
+                    <input type="number" min="10" max="1000">
+                </fieldset>
+                <fieldset>
+                    <div class="import">Payement et réduction sur facture</div><br>
+                    <p><em>Note :</em> Le payement des factures c'est fait au comptant et seulement en <em>EPECE</em>, des valeurs en <em>NATURE</em> ne sont pas admissibles</p><br>
+                    <input type="checkbox" id="mode"style="width: none;">
+                    <label for="mode">Payer à la livraison</label>
+                    <input type="checkbox" id="mode"style="width: none;">
+                    <label for="mode">Payer lors de la commmande</label>
+                    <input type="checkbox" id="autre"style="width: none;">
+                    <label for="autre">Autre mode de payement</label><br>
+                    <p><em>Note :</em> Vous pouvez payer votre facture par une des options suivantes</p>
+                    <p>
+                        - Par virement d'éspèces,<br>
+                        - Par voie de téléphonie mobile,<br>
+                        - Payer comptant lors de la commande ou à la livraison <br>
+                    </p><br>
+                </fieldset>
+                <div id="bouton"><button value="submit">Soumettre</button></div>
+            </form>
+            <p>Pour plus d'<em>informations</em> sur le mode de payement par virement ou par téléphonie mobile; référez-vous à nos contacts ou nous envoyer un e-mail</p>.
+        </div>    
+    </main>
+    <footer>
+        <div class="logo">
+                
+                <img src="logo.PNG" alt="logo" style="width: 100px; height: 50px;">
+               
+                <div class="adresse">
+                    <h3>Adresse</h3>
+                    <div id="add">RDCongo</div>
+                    <div id="add">GOMA <br> Goma <br> 12 Du Lac</div>
+                </div>
+                <div id="Home">
+                    <ul class="arrange">
+                        <h3>Home</h3>
+                        <li><a href="index.html" >HOME</a> </li>
+                        <li><a href="index1.html">SERVICES</a></li>
+                        <li><a href="index2.html" >ABOUT US</a> 
+                        <li><a href="index3.html">CONTACT US</a></li>
+                        <li><a href="index4.html" >E-MAIL</a></li>
+                        <li><a href="index5.html" >ORDER</a> </li>
+                    </ul>               
+                </div>
+                <div id="Services">
+                    <h3>Services</h3>
+                    <ul class="arrange">
+                        <li><a href="#" >Produits d'élevage</a></li>
+                        <li><a href="#" >Produits agricoles</a></li> 
+                        <li><a href="#" >produits dérivés</a></li>
+                        <li><a href="#" >Produits provendes</a></li>    
+                    </ul>
+                </div>
+                <div id="aboutus">
+                    <ul class="arrange">
+                        <h3>About Us</h3>
+                        <li><a href="#" >Entreposage</a></li>
+                        <li><a href="#" >Produits d'exportation</a> </li>
+                        <li><a href="#" >Suivie et orientation</a></li>
+                        <li><a href="#" >Nos persectives d'avenir</a></li>
+                    </ul>
+                </div>
+                <div id="contactus">
+                        <ul class="arrange">
+                            <h3>Conctat Us</h3>
+                            <li><a href="#" >FACEBOOK</a></li>
+                            <li><a href="#" >INSTAGRAM</a></li>
+                            <li><a href="#" >LINKED IN</a></li>
+                        </ul>  
+                </div>
+                <div id="email">
+                    <ul class="arrange">
+                        <h3>E-mail</h3>
+                        <li><a href="#" >E-MAIL</a></li>
+                    </ul>   
+                </div>
+                <div id="order">
+                        <ul class="arrange">
+                            <h3>Order</h3>
+                            <li><a href="index5.html">Vos commandes</a></li>
+                            <li><a href="#" >Tarifs & reduction sur tarif</li>
+                            <li><a href="#" >Distribution & Transport</a></li>
+                        </ul>       
+                </div>
+
+           
+
+        </div>
+        <div class="reseau">
+            <p class="copyright">
+            Copyrigth@ 2023 Intwari.corporation Ldt.All rigths Reseved. <br>
+            <span>IntwariCorp</span>
+            </p>
+        </div>
+
+</footer>            
+</body>
+</html>
